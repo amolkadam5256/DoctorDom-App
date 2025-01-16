@@ -158,12 +158,6 @@ server
 
 ---
 
-## 📜 **License**
-
-This project is licensed under the **MIT License**.
-
----
-
 ## 🖼️ **Screenshots**
 
 1. **Patient Dashboard**
