@@ -101,15 +101,50 @@ DoctorDom is designed to simplify the doctor-patient interaction process, offeri
 
 ## 📁 **Project Structure**
 
+### Frontend (React.js)
 ```plaintext
-DoctorDom-App
-├── client         # Frontend code (React.js)
-├── server         # Backend code (Node.js + Express.js)
-├── models         # Database models
-├── routes         # API routes
-├── controllers    # Request handling logic
-├── utils          # Utility functions
-└── README.md      # Project documentation
+client
+├── public               # Static files
+├── src
+│   ├── components       # Reusable React components
+│   │   ├── Navbar.js    # Navigation bar
+│   │   ├── Footer.js    # Footer section
+│   │   ├── Auth         # Authentication components
+│   │   │   ├── Login.js
+│   │   │   └── Register.js
+│   │   ├── Patient      # Patient-specific components
+│   │   │   ├── PatientDashboard.js
+│   │   │   └── AppointmentCard.js
+│   │   ├── Doctor       # Doctor-specific components
+│   │   │   ├── DoctorDashboard.js
+│   │   │   └── EarningsChart.js
+│   │   └── Admin        # Admin-specific components
+│   │       ├── AdminDashboard.js
+│   │       └── ManageDoctors.js
+│   ├── pages            # Application pages
+│   │   ├── Home.js      # Landing page
+│   │   ├── About.js     # About page
+│   │   └── Contact.js   # Contact page
+│   ├── App.js           # Main React component
+│   ├── index.js         # Entry point
+│   └── styles           # CSS files
+│       ├── App.css      # Global styles
+│       ├── Navbar.css   # Navbar-specific styles
+│       ├── Footer.css   # Footer-specific styles
+│       └── Dashboard.css # Dashboard styles
+└── package.json         # Frontend dependencies
+```
+
+### Backend (Node.js + Express.js)
+```plaintext
+server
+├── models               # Database models
+├── routes               # API routes
+├── controllers          # Request handlers
+├── middleware           # Authentication and other middleware
+├── utils                # Utility functions
+├── server.js            # Entry point for the backend
+└── package.json         # Backend dependencies
 ```
 
 ---
