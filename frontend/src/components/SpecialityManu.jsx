@@ -11,7 +11,7 @@ const SpecialityManu = () => {
             <p className='text-sm text-center sm:w-1/2'>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum labore et velit distinctio perspiciatis aut nisi praesentium vero adipisci! Ipsam ex quam corrupti consectetur? Esse vitae eveniet deleniti accusamus optio?
             </p>
-            <div className='flex w-full gap-4 pt-5 overflow-scroll sm:justify-center'>
+            <div className='flex w-full gap-4 pt-5 overflow-x-auto scroll-smooth sm:justify-center'>
                 {specialityData.map((item, index) => (
                     <Link 
                         onClick={() => scrollTo(0, 0)} 
