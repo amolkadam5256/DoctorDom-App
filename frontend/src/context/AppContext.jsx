@@ -4,7 +4,7 @@ import { doctors } from "../assets/assets";
 export const AppContext = createContext();
 
 const AppContextProvider = (props) => {
-    
+
     const currencySymbool = '$'
     const value = {
         doctors,
